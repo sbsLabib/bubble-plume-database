@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Nondimensionalized literature-comparison datasets representing the Milgram 1983 round bubble plume study."
+  />
+  <title>Milgram 1983 | Bubble Plume Data Repository</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="../index.html" aria-label="Bubble Plume Data Repository home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>Bubble Plume Data Repository</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#database">Data model</a></li>
+        <li><a href="../index.html#visualization">Compare data</a></li>
+        <li><a href="../group.html">Research Group</a></li>
+        <li><a href="../index.html#status">Roadmap</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero page-hero paper-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Paper and dataset detail</p>
+        <h1>Milgram 1983</h1>
+        <p class="paper-title">Mean flow in round bubble plumes</p>
+        <p class="hero-text">
+          Nondimensionalized literature-comparison datasets describing mean-flow characteristics of round
+          bubble plumes represented by the Milgram83 literature series.
+        </p>
+      </div>
+
+      <aside class="scope-card" aria-label="Dataset summary">
+        <p class="scope-label">Dataset summary</p>
+        <dl class="paper-facts">
+          <div>
+            <dt>Original source</dt>
+            <dd>Milgram (1983)</dd>
+          </div>
+          <div>
+            <dt>Processed-data source</dt>
+            <dd>Li et al. (2020)</dd>
+          </div>
+          <div>
+            <dt>Data type</dt>
+            <dd>Nondimensionalized comparison data</dd>
+          </div>
+          <div>
+            <dt>Available files</dt>
+            <dd>5 CSV datasets</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Literature record</p>
+        <h2>Sources and attribution</h2>
+        <p class="section-intro">
+          The original study and the later source used to process the current values are listed separately.
+        </p>
+      </div>
+
+      <div class="citation-grid">
+        <article class="citation-card primary-source">
+          <p class="citation-label">Primary citation</p>
+          <h3>Original literature source</h3>
+          <p>
+            Milgram, J. H. (1983). Mean flow in round bubble plumes. <cite>Journal of Fluid Mechanics</cite>,
+            133, 345&ndash;376.
+          </p>
+          <a class="doi-link" href="https://doi.org/10.1017/S0022112083001950">
+            https://doi.org/10.1017/S0022112083001950
+          </a>
+        </article>
+
+        <article class="citation-card">
+          <p class="citation-label">Processed-data source</p>
+          <h3>Later nondimensional comparison</h3>
+          <p>
+            Li, G., Wang, B., Wu, H., &amp; DiMarco, S. F. (2020). Impact of bubble size on the integral
+            characteristics of bubble plumes in quiescent and unstratified water.
+            <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accent-section provenance-section">
+      <div class="provenance-note">
+        <p class="eyebrow">Data provenance note</p>
+        <h2>How to interpret this collection</h2>
+        <p>
+          The CSV files on this page represent nondimensionalized comparison data for the Milgram83
+          literature series. These values were processed from later nondimensional scaling plots, not directly
+          extracted from Milgram&rsquo;s original tabular data. Milgram (1983) remains the original literature
+          source represented by the series.
+        </p>
+      </div>
+    </section>
+
+    <section id="datasets" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Available datasets</p>
+        <h2>Milgram83 cleaned CSV files</h2>
+        <p class="section-intro">
+          Each file contains two columns of nondimensionalized literature-comparison data and can be
+          downloaded directly for inspection or analysis.
+        </p>
+      </div>
+
+      <!-- The wrapper allows the table to scroll horizontally on narrow screens. -->
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Milgram 1983 dataset downloads">
+        <table class="dataset-table">
+          <caption>Processed datasets representing the Milgram83 literature series</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dataset name</th>
+              <th scope="col">X variable</th>
+              <th scope="col">Y variable</th>
+              <th scope="col">Data format</th>
+              <th scope="col">File</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gas fraction parameter</td>
+              <td><code>z_hat</code></td>
+              <td><code>alpha</code></td>
+              <td>CSV, 2 columns</td>
+              <td><a class="download-link" href="../csv/milgram_1983_cleaned/alpha_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Plume width ratio</td>
+              <td><code>z_hat</code></td>
+              <td><code>b_g_over_D</code></td>
+              <td>CSV, 2 columns</td>
+              <td><a class="download-link" href="../csv/milgram_1983_cleaned/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Centerline velocity</td>
+              <td><code>z_hat</code></td>
+              <td><code>W_c</code></td>
+              <td>CSV, 2 columns</td>
+              <td><a class="download-link" href="../csv/milgram_1983_cleaned/centerline_velocity_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Momentum flux</td>
+              <td><code>z_hat</code></td>
+              <td><code>M</code></td>
+              <td>CSV, 2 columns</td>
+              <td><a class="download-link" href="../csv/milgram_1983_cleaned/momentum_flux_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Volume flux</td>
+              <td><code>z_hat</code></td>
+              <td><code>Q</code></td>
+              <td>CSV, 2 columns</td>
+              <td><a class="download-link" href="../csv/milgram_1983_cleaned/volume_flux_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="metadata-note">
+        <strong>Metadata status:</strong> Variable names and normalization definitions will be refined as the
+        dataset metadata is finalized.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Bubble Plume Data Repository</strong></p>
+    <p>Academic research prototype &middot; 2026</p>
+  </footer>
+</body>
+</html>

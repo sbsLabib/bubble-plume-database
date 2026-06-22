@@ -1,0 +1,68 @@
+{
+  "paper_id": "milgram_1983",
+  "short_name": "Milgram 1983",
+  "title": "",
+  "authors": [],
+  "year": 1983,
+  "doi": "",
+  "study_type": "experimental",
+  "summary": "",
+  "notes": "Metadata fields are placeholders until the paper is reviewed.",
+  "datasets": [
+    {
+      "dataset_id": "milgram_1983_alpha_vs_z_hat",
+      "file": "datasets/alpha_vs_z_hat.csv",
+      "x_variable": "z_hat",
+      "y_variable": "alpha",
+      "description": "Alpha parameter plotted against nondimensional height.",
+      "source_figure": "",
+      "x_unit": "dimensionless",
+      "y_unit": "",
+      "notes": ""
+    },
+    {
+      "dataset_id": "milgram_1983_b_g_over_D_vs_z_hat",
+      "file": "datasets/b_g_over_D_vs_z_hat.csv",
+      "x_variable": "z_hat",
+      "y_variable": "b_g_over_D",
+      "description": "Plume/bubble width scale b_g/D plotted against nondimensional height.",
+      "source_figure": "",
+      "x_unit": "dimensionless",
+      "y_unit": "",
+      "notes": ""
+    },
+    {
+      "dataset_id": "milgram_1983_centerline_velocity_vs_z_hat",
+      "file": "datasets/centerline_velocity_vs_z_hat.csv",
+      "x_variable": "z_hat",
+      "y_variable": "W_c",
+      "description": "Centerline velocity plotted against nondimensional height.",
+      "source_figure": "",
+      "x_unit": "dimensionless",
+      "y_unit": "",
+      "notes": ""
+    },
+    {
+      "dataset_id": "milgram_1983_momentum_flux_vs_z_hat",
+      "file": "datasets/momentum_flux_vs_z_hat.csv",
+      "x_variable": "z_hat",
+      "y_variable": "M",
+      "description": "Momentum flux plotted against nondimensional height.",
+      "source_figure": "",
+      "x_unit": "dimensionless",
+      "y_unit": "",
+      "notes": ""
+    },
+    {
+      "dataset_id": "milgram_1983_volume_flux_vs_z_hat",
+      "file": "datasets/volume_flux_vs_z_hat.csv",
+      "x_variable": "z_hat",
+      "y_variable": "Q",
+      "description": "Volume flux plotted against nondimensional height.",
+      "source_figure": "",
+      "x_unit": "dimensionless",
+      "y_unit": "",
+      "notes": ""
+    }
+  ]
+}
