@@ -9,10 +9,12 @@ The website is intentionally built with plain HTML and CSS so it can be hosted d
 - `index.html` contains the homepage text and page structure.
 - `group.html` contains the research group page and its placeholder profiles.
 - `papers/milgram_1983.html` contains the Milgram 1983 paper and dataset detail page.
+- `papers/li_2020.html` contains the Li et al. 2020 paper and dataset detail page.
 - `style.css` contains the colors, spacing, responsive layout, and other visual styles.
 - `AGENTS.md` contains project instructions for future Codex tasks.
 - `LICENSE` contains the repository license.
 - `csv/milgram_1983_cleaned/` contains the cleaned Milgram83 literature-comparison CSV files.
+- `csv/li_2020_cleaned/` contains the cleaned Li et al. 2020 nondimensionalized CSV files.
 
 There is no JavaScript file yet because the current homepage does not need one.
 

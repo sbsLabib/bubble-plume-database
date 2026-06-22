@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Nondimensionalized bubble plume datasets from Li et al. 2020."
+  />
+  <title>Li et al. 2020 | Bubble Plume Data Repository</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="../index.html" aria-label="Bubble Plume Data Repository home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>Bubble Plume Data Repository</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#database">Data model</a></li>
+        <li><a href="../index.html#visualization">Compare data</a></li>
+        <li><a href="../group.html">Research Group</a></li>
+        <li><a href="../index.html#status">Roadmap</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero page-hero paper-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Paper and dataset detail</p>
+        <h1>Li et al. 2020</h1>
+        <p class="paper-title">
+          Impact of bubble size on the integral characteristics of bubble plumes in quiescent and unstratified water
+        </p>
+        <p class="hero-text">
+          Nondimensionalized datasets related to plume half-width, centerline velocity, liquid volume flux,
+          and momentum flux from Li et al. (2020).
+        </p>
+      </div>
+
+      <aside class="scope-card" aria-label="Dataset summary">
+        <p class="scope-label">Dataset summary</p>
+        <dl class="paper-facts">
+          <div>
+            <dt>Literature source</dt>
+            <dd>Li et al. (2020)</dd>
+          </div>
+          <div>
+            <dt>Data type</dt>
+            <dd>Nondimensionalized plotting data</dd>
+          </div>
+          <div>
+            <dt>Source figures</dt>
+            <dd>Figures 10a&ndash;11b</dd>
+          </div>
+          <div>
+            <dt>Available files</dt>
+            <dd>4 CSV datasets</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="section citation-section">
+      <div class="section-heading">
+        <p class="eyebrow">Primary citation</p>
+        <h2>Source publication</h2>
+      </div>
+
+      <article class="citation-card citation-card-wide primary-source">
+        <p>
+          Li, G., Wang, B., Wu, H., &amp; DiMarco, S. F. (2020). Impact of bubble size on the integral
+          characteristics of bubble plumes in quiescent and unstratified water.
+          <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
+        </p>
+        <a class="doi-link" href="https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230">
+          https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230
+        </a>
+      </article>
+    </section>
+
+    <section id="datasets" class="section accent-section dataset-section">
+      <div class="section-heading">
+        <p class="eyebrow">Available datasets</p>
+        <h2>Li et al. 2020 cleaned CSV files</h2>
+        <p class="section-intro">
+          The variable descriptions below use the current repository terminology and preserve the exact
+          machine-readable column names used in each CSV file.
+        </p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Li et al. 2020 dataset downloads">
+        <table class="dataset-table wide-table">
+          <caption>Nondimensionalized plotting datasets from Li et al. (2020)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dataset name</th>
+              <th scope="col">X variable</th>
+              <th scope="col">Y variable</th>
+              <th scope="col">Source figure</th>
+              <th scope="col">Format</th>
+              <th scope="col">File</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nondimensional plume half-width</td>
+              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+              <td><code>b_g_over_D</code><span class="variable-definition">b_g/D; plume half-width normalized by D</span></td>
+              <td>Figure 10a</td>
+              <td>CSV</td>
+              <td><a class="download-link" href="../csv/li_2020_cleaned/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Normalized centerline velocity</td>
+              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+              <td><code>W_c_over_W_s</code><span class="variable-definition">W_c/W_s; normalized by bubble slip velocity</span></td>
+              <td>Figure 10b</td>
+              <td>CSV</td>
+              <td><a class="download-link" href="../csv/li_2020_cleaned/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Nondimensional liquid volume flux</td>
+              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+              <td><code>Q_over_D2_W_s</code><span class="variable-definition">Q/(D<sup>2</sup> W_s)</span></td>
+              <td>Figure 11a</td>
+              <td>CSV</td>
+              <td><a class="download-link" href="../csv/li_2020_cleaned/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Nondimensional momentum flux</td>
+              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+              <td><code>M_over_D2_W_s2</code><span class="variable-definition">M/(D<sup>2</sup> W_s<sup>2</sup>)</span></td>
+              <td>Figure 11b</td>
+              <td>CSV</td>
+              <td><a class="download-link" href="../csv/li_2020_cleaned/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section data-notes-section">
+      <div class="section-heading">
+        <p class="eyebrow">Data notes</p>
+        <h2>Processing and metadata status</h2>
+      </div>
+      <ul class="data-notes-list">
+        <li>The cleaned CSV files contain nondimensionalized plotting data.</li>
+        <li>Rows were sorted numerically by <code>z_hat</code>.</li>
+        <li>Case labels such as AS/SO or Q1/Q2 are not included unless explicitly available in the CSV files.</li>
+        <li>Future metadata may add case-level labels and experimental-condition fields.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Bubble Plume Data Repository</strong></p>
+    <p>Academic research prototype &middot; 2026</p>
+  </footer>
+</body>
+</html>
