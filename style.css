@@ -321,6 +321,12 @@ h3 {
   font-size: 0.88rem;
 }
 
+.table-link-list {
+  display: grid;
+  gap: 5px;
+  padding-left: 18px;
+}
+
 .download-link,
 .dataset-page-link,
 .doi-link {
@@ -420,6 +426,12 @@ h3 {
 
 .provenance-note > p:last-child {
   max-width: 920px;
+  color: var(--navy-soft);
+}
+
+.related-record-link {
+  max-width: 920px;
+  margin-top: 12px;
   color: var(--navy-soft);
 }
 

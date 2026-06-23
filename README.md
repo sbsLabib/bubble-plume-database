@@ -9,12 +9,14 @@ The website is intentionally built with plain HTML and CSS so it can be hosted d
 - `index.html` contains the homepage text and page structure.
 - `group.html` contains the research group page and its placeholder profiles.
 - `papers/milgram_1983.html` contains the Milgram 1983 paper and dataset detail page.
+- `papers/milgram_1983_tabular.html` contains selected dimensional tabular data extracted from Milgram 1983.
 - `papers/li_2020.html` contains the Li et al. 2020 paper and dataset detail page.
 - `style.css` contains the colors, spacing, responsive layout, and other visual styles.
 - `AGENTS.md` contains project instructions for future Codex tasks.
 - `LICENSE` contains the repository license.
 - `csv/milgram_1983_cleaned/` contains the cleaned Milgram83 literature-comparison CSV files.
 - `csv/li_2020_complete_cleaned/` contains the complete cleaned Li et al. 2020 datasets, separated into air-stone and single-orifice cases.
+- `csv/milgram83_tabular_and_related_nondim_data/` contains selected Milgram 1983 tabular data and related nondimensional literature-series datasets.
 
 There is no JavaScript file yet because the current homepage does not need one.
 

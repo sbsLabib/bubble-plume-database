@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Selected dimensional tabular data extracted from Milgram 1983 for the Bubble Plume Data Repository."
+  />
+  <title>Tabular Data from Milgram 1983 | Bubble Plume Data Repository</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="../index.html" aria-label="Bubble Plume Data Repository home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>Bubble Plume Data Repository</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#data-catalog">Data catalog</a></li>
+        <li><a href="../index.html#key-figures">Key figures</a></li>
+        <li><a href="../index.html#notes">Notes</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero page-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Dimensional tabular data</p>
+        <h1>Tabular Data from Milgram 1983</h1>
+        <p class="paper-title">
+          Selected dimensional data extracted from the original tables in “Mean flow in round bubble plumes”
+        </p>
+        <p class="hero-text">
+          This page provides download links for selected dimensional tabular data extracted from Milgram
+          (1983). These files are kept separate from the nondimensional comparison datasets.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="paper-synopsis" aria-labelledby="tabular-synopsis-heading">
+      <div class="paper-synopsis-inner">
+        <h2 id="tabular-synopsis-heading">Paper synopsis</h2>
+        <p>
+          Milgram (1983) provides tabular plume-property data used to analyze mean-flow behavior in round
+          bubble plumes. The selected files on this page preserve key dimensional quantities from the original
+          tables, including height above the gas outlet, smoothed plume half-width, smoothed centerline
+          velocity, gas volume flux, momentum amplification factor, entrainment coefficient, and the weighting
+          term used in the entrainment analysis. These tables complement the nondimensional comparison
+          datasets used elsewhere in the repository.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Primary citation</p>
+        <h2>Source publication</h2>
+      </div>
+
+      <article class="citation-card citation-card-wide primary-source">
+        <p>
+          Milgram, J. H. (1983). Mean flow in round bubble plumes.
+          <cite>Journal of Fluid Mechanics</cite>, 133, 345&ndash;376.
+        </p>
+        <a class="doi-link" href="https://doi.org/10.1017/S0022112083001950">
+          https://doi.org/10.1017/S0022112083001950
+        </a>
+      </article>
+    </section>
+
+    <section id="selected-tabular-datasets" class="section accent-section">
+      <div class="section-heading">
+        <p class="eyebrow">CSV downloads</p>
+        <h2>Selected tabular datasets</h2>
+        <p class="section-intro">
+          These files contain selected dimensional variables from Milgram&rsquo;s original tables. They are
+          intended for direct inspection, dimensional analysis, and future reproducible plotting notebooks.
+        </p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Selected Milgram 1983 tabular dataset downloads">
+        <table class="dataset-table catalog-table">
+          <thead>
+            <tr>
+              <th scope="col">Source table</th>
+              <th scope="col">Dataset type</th>
+              <th scope="col">Main variables</th>
+              <th scope="col">Suggested use</th>
+              <th scope="col">CSV download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table 1</td>
+              <td>Primary measurement-height plume properties</td>
+              <td><code>z_m</code>, <code>b_smooth_m</code>, <code>U_smooth_m_s</code>, <code>q_m3_s</code>, <code>gamma</code></td>
+              <td>Dimensional analysis of plume half-width, centerline velocity, gas flux, and momentum amplification at measurement heights.</td>
+              <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/milgram_1983_tabular_selected/table1_primary_measurement_heights_selected.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Table 2</td>
+              <td>Primary entrainment-coefficient data at midpoint heights</td>
+              <td><code>z_m</code>, <code>b_midpoint_m</code>, <code>U_midpoint_m_s</code>, <code>q_m3_s</code>, <code>W</code>, <code>alpha</code></td>
+              <td>Dimensional analysis of entrainment coefficient and midpoint plume properties.</td>
+              <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/milgram_1983_tabular_selected/table2_primary_entrainment_midpoints_selected.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Table 3</td>
+              <td>Secondary Kobus and Topham measurement-height plume properties</td>
+              <td><code>z_m</code>, <code>b_smooth_m</code>, <code>U_smooth_m_s</code>, <code>q_m3_s</code>, <code>gamma</code></td>
+              <td>Secondary comparison data for Kobus and Topham datasets analyzed by Milgram.</td>
+              <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/milgram_1983_tabular_selected/table3_secondary_kobus_topham_measurement_heights_selected.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Table 4</td>
+              <td>Secondary Kobus and Topham entrainment-coefficient data at midpoint heights</td>
+              <td><code>z_m</code>, <code>b_midpoint_m</code>, <code>U_midpoint_m_s</code>, <code>q_m3_s</code>, <code>W</code>, <code>alpha</code></td>
+              <td>Secondary comparison entrainment data for Kobus and Topham datasets.</td>
+              <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/milgram_1983_tabular_selected/table4_secondary_kobus_topham_entrainment_midpoints_selected.csv" download>Download CSV</a></td>
+            </tr>
+            <tr>
+              <td>Combined selected data</td>
+              <td>Combined selected variables from Tables 1&ndash;4</td>
+              <td><code>table_number</code>, <code>data_group</code>, <code>source_study</code>, <code>airflow_normal_m3_s</code>, <code>z_m</code>, <code>b_m</code>, <code>U_m_s</code>, <code>q_m3_s</code>, <code>gamma</code>, <code>alpha</code>, <code>W</code></td>
+              <td>Convenient combined file for quick filtering and exploratory plotting.</td>
+              <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/milgram_1983_tabular_selected/combined_milgram_1983_tabular_selected.csv" download>Download CSV</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Interpretation</p>
+        <h2>Data interpretation notes</h2>
+      </div>
+
+      <ul class="compact-list data-notes-list">
+        <li>Tables 1 and 3 contain measurement-height values and momentum amplification factor <code>gamma</code>.</li>
+        <li>Tables 2 and 4 contain midpoint values and entrainment coefficient <code>alpha</code>.</li>
+        <li>Tables 1 and 2 are the primary datasets used in Milgram&rsquo;s analysis.</li>
+        <li>Tables 3 and 4 contain secondary comparison data from Kobus and Topham as analyzed by Milgram.</li>
+        <li>The combined CSV uses <code>b_m</code> and <code>U_m_s</code> as common column names; use the <code>value_basis</code> column to determine whether values are measurement-height smooth values or midpoint averages.</li>
+        <li>These dimensional tabular files should be kept separate from the nondimensional comparison CSVs.</li>
+      </ul>
+    </section>
+
+    <section id="related-literature-series" class="section accent-section">
+      <div class="section-heading">
+        <p class="eyebrow">Related comparison data</p>
+        <h2>Related nondimensional literature-series data</h2>
+        <p class="section-intro">
+          Additional nondimensionalized literature-series datasets are available for Fannelop &amp; Sjoen
+          (1980) and Milgram &amp; Van Houten (1982), processed in the same comparison-data style used for
+          the Li et al. scaling plots.
+        </p>
+      </div>
+
+      <div class="dataset-group">
+        <div class="dataset-group-heading">
+          <h3>Fannelop &amp; Sjoen 1980</h3>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Fannelop and Sjoen 1980 nondimensional dataset downloads">
+          <table class="dataset-table">
+            <thead>
+              <tr>
+                <th scope="col">Dataset name</th>
+                <th scope="col">Variables</th>
+                <th scope="col">CSV download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nondimensional plume half-width</td>
+                <td><code>b_g/D</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/fannelop_sjoen_1980/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Normalized centerline velocity</td>
+                <td><code>W_c/W_s</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/fannelop_sjoen_1980/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional liquid volume flux</td>
+                <td><code>Q/(D<sup>2</sup> W_s)</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/fannelop_sjoen_1980/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional momentum flux</td>
+                <td><code>M/(D<sup>2</sup> W_s<sup>2</sup>)</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/fannelop_sjoen_1980/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dataset-group">
+        <div class="dataset-group-heading">
+          <h3>Milgram &amp; Van Houten 1982</h3>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Milgram and Van Houten 1982 nondimensional dataset downloads">
+          <table class="dataset-table">
+            <thead>
+              <tr>
+                <th scope="col">Dataset name</th>
+                <th scope="col">Variables</th>
+                <th scope="col">CSV download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nondimensional plume half-width</td>
+                <td><code>b_g/D</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/milgram_van_houten_1982/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Normalized centerline velocity</td>
+                <td><code>W_c/W_s</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/milgram_van_houten_1982/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional liquid volume flux</td>
+                <td><code>Q/(D<sup>2</sup> W_s)</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/milgram_van_houten_1982/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional momentum flux</td>
+                <td><code>M/(D<sup>2</sup> W_s<sup>2</sup>)</code> vs <code>z_hat</code> = z/D</td>
+                <td><a class="download-link" href="../csv/milgram83_tabular_and_related_nondim_data/li2020_literature_series_nondimensional/milgram_van_houten_1982/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Bubble Plume Data Repository</strong></p>
+    <p>Static GitHub Pages research data portal &middot; 2026</p>
+  </footer>
+</body>
+</html>
