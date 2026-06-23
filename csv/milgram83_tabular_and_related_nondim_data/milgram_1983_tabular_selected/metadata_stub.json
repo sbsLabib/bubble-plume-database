@@ -1,0 +1,55 @@
+{
+  "paper_id": "milgram_1983",
+  "title": "Mean flow in round bubble plumes",
+  "doi": "https://doi.org/10.1017/S0022112083001950",
+  "extraction_scope": "Selected dimensional tabular data from Tables 1-4",
+  "selected_variables": {
+    "z_m": "height above gas outlet, m",
+    "b_smooth_m": "smoothed plume half-width/plume radius at measurement height, m",
+    "U_smooth_m_s": "smoothed centerline velocity at measurement height, m/s",
+    "b_midpoint_m": "midpoint average plume half-width/plume radius, m",
+    "U_midpoint_m_s": "midpoint average centerline velocity, m/s",
+    "q_m3_s": "gas volume flux, m^3/s",
+    "gamma": "momentum amplification factor",
+    "alpha": "entrainment coefficient",
+    "W": "height-interval weighting term used in Milgram equation (2.25)"
+  },
+  "notes": [
+    "Tables 1 and 3 contain measurement-height values and gamma.",
+    "Tables 2 and 4 contain midpoint values and alpha/W.",
+    "Blank gamma, alpha, or W cells indicate the value is not reported for that row/table.",
+    "The combined file uses b_m and U_m_s with value_basis to identify whether the values are smoothed measurement-height values or midpoint averages."
+  ],
+  "source_tables": [
+    {
+      "file": "table1_primary_measurement_heights_selected.csv",
+      "table": "Table 1",
+      "rows": 67,
+      "description": "Primary measurement-height data with smooth b/U, q, and gamma."
+    },
+    {
+      "file": "table2_primary_entrainment_midpoints_selected.csv",
+      "table": "Table 2",
+      "rows": 55,
+      "description": "Primary midpoint data with b/U/q averages, W, and alpha."
+    },
+    {
+      "file": "table3_secondary_kobus_topham_measurement_heights_selected.csv",
+      "table": "Table 3",
+      "rows": 33,
+      "description": "Secondary Kobus/Topham measurement-height data with smooth b/U, q, and gamma."
+    },
+    {
+      "file": "table4_secondary_kobus_topham_entrainment_midpoints_selected.csv",
+      "table": "Table 4",
+      "rows": 28,
+      "description": "Secondary Kobus/Topham midpoint data with b/U/q averages, W, and alpha."
+    },
+    {
+      "file": "combined_milgram_1983_tabular_selected.csv",
+      "table": "Tables 1-4",
+      "rows": 183,
+      "description": "Combined selected Milgram 1983 tabular data with common b_m and U_m_s columns."
+    }
+  ]
+}

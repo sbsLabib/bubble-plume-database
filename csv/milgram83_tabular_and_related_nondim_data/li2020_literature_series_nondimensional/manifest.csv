@@ -1,0 +1,9 @@
+folder,file,series_label,rows,description,source
+fannelop_sjoen_1980,b_g_over_D_vs_z_hat.csv,FS80,20,b_g/D vs z/D,"Fannelop & Sjoen (1980), nondimensionalized in Li et al. (2020)"
+fannelop_sjoen_1980,centerline_velocity_over_W_s_vs_z_hat.csv,FS80,24,W_c/W_s vs z/D,"Fannelop & Sjoen (1980), nondimensionalized in Li et al. (2020)"
+fannelop_sjoen_1980,volume_flux_over_D2_W_s_vs_z_hat.csv,FS80,19,Q/(D^2 W_s) vs z/D,"Fannelop & Sjoen (1980), nondimensionalized in Li et al. (2020)"
+fannelop_sjoen_1980,momentum_flux_over_D2_W_s2_vs_z_hat.csv,FS80,18,M/(D^2 W_s^2) vs z/D,"Fannelop & Sjoen (1980), nondimensionalized in Li et al. (2020)"
+milgram_van_houten_1982,b_g_over_D_vs_z_hat.csv,MV82,14,b_g/D vs z/D,"Milgram & Van Houten (1982), nondimensionalized in Li et al. (2020)"
+milgram_van_houten_1982,centerline_velocity_over_W_s_vs_z_hat.csv,MV82,20,W_c/W_s vs z/D,"Milgram & Van Houten (1982), nondimensionalized in Li et al. (2020)"
+milgram_van_houten_1982,volume_flux_over_D2_W_s_vs_z_hat.csv,MV82,15,Q/(D^2 W_s) vs z/D,"Milgram & Van Houten (1982), nondimensionalized in Li et al. (2020)"
+milgram_van_houten_1982,momentum_flux_over_D2_W_s2_vs_z_hat.csv,MV82,16,M/(D^2 W_s^2) vs z/D,"Milgram & Van Houten (1982), nondimensionalized in Li et al. (2020)"

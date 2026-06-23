@@ -1,0 +1,6 @@
+file,table,rows,description
+table1_primary_measurement_heights_selected.csv,Table 1,67,"Primary measurement-height data with smooth b/U, q, and gamma."
+table2_primary_entrainment_midpoints_selected.csv,Table 2,55,"Primary midpoint data with b/U/q averages, W, and alpha."
+table3_secondary_kobus_topham_measurement_heights_selected.csv,Table 3,33,"Secondary Kobus/Topham measurement-height data with smooth b/U, q, and gamma."
+table4_secondary_kobus_topham_entrainment_midpoints_selected.csv,Table 4,28,"Secondary Kobus/Topham midpoint data with b/U/q averages, W, and alpha."
+combined_milgram_1983_tabular_selected.csv,Tables 1-4,183,Combined selected Milgram 1983 tabular data with common b_m and U_m_s columns.
