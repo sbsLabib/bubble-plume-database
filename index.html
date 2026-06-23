@@ -123,33 +123,79 @@
 
     <section id="key-figures" class="section accent-section">
       <div class="section-heading">
-        <p class="eyebrow">Planned reproducible plots</p>
-        <h2>Key figures</h2>
+        <p class="eyebrow">Notebook-generated figures</p>
+        <h2>Reproducible plots</h2>
         <p class="section-intro">
-          Python notebooks for reproducing these figures will be added as the plotting workflow is finalized.
+          Key nondimensional scaling figures are generated directly from the cleaned CSV datasets using a
+          Python notebook. The static figures shown below are produced from the same notebook so users can
+          download the data, inspect the workflow, and reproduce the plots.
         </p>
       </div>
 
-      <ul class="compact-list figure-list">
-        <li><strong>Plume half-width scaling:</strong> b_g/D vs z/D</li>
-        <li><strong>Centerline velocity scaling:</strong> W_c/W_s vs z/D</li>
-        <li><strong>Volume flux scaling:</strong> Q/(D<sup>2</sup> W_s) vs z/D</li>
-        <li><strong>Momentum flux scaling:</strong> M/(D<sup>2</sup> W_s<sup>2</sup>) vs z/D</li>
-      </ul>
+      <div class="resource-links" aria-label="Reproducible plotting resources">
+        <a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Python notebook</a>
+        <a class="download-link" href="scripts/plot_literature_scaling.py">Python script</a>
+        <a class="download-link" href="requirements.txt">Requirements</a>
+      </div>
+
+      <div class="figure-grid">
+        <figure>
+          <img
+            src="figures/literature_scaling/bgD_vs_zhat.png"
+            alt="Plot of nondimensional plume half-width b_g over D versus z over D."
+          />
+          <figcaption>
+            <strong>Plume half-width scaling.</strong>
+            b_g/D versus z/D from cleaned nondimensional comparison datasets.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="figures/literature_scaling/WcWs_vs_zhat.png"
+            alt="Plot of centerline velocity normalized by bubble slip velocity versus z over D."
+          />
+          <figcaption>
+            <strong>Centerline velocity scaling.</strong>
+            W_c/W_s versus z/D from cleaned nondimensional comparison datasets.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="figures/literature_scaling/Qhat_vs_zhat.png"
+            alt="Plot of nondimensional liquid volume flux versus z over D."
+          />
+          <figcaption>
+            <strong>Volume flux scaling.</strong>
+            Q/(D<sup>2</sup> W_s) versus z/D from cleaned nondimensional comparison datasets.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="figures/literature_scaling/Mhat_vs_zhat.png"
+            alt="Plot of nondimensional momentum flux versus z over D."
+          />
+          <figcaption>
+            <strong>Momentum flux scaling.</strong>
+            M/(D<sup>2</sup> W_s<sup>2</sup>) versus z/D from cleaned nondimensional comparison datasets.
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="notes" class="section">
       <div class="section-heading">
         <p class="eyebrow">Repository notes</p>
-        <h2>Data notes</h2>
+        <h2>Reproducibility notes</h2>
       </div>
 
       <ul class="compact-list data-notes-list">
-        <li>Processed CSV files are cleaned and sorted for plotting.</li>
-        <li>Raw and processed data will be separated where both are available.</li>
-        <li>Each dataset should retain citation and provenance information.</li>
-        <li>Paper access is provided through DOI links only.</li>
-        <li>Future updates will include reproducible plotting notebooks.</li>
+        <li>The notebook reads CSV files using relative repository paths.</li>
+        <li>Figures are saved to <code>figures/literature_scaling/</code>.</li>
+        <li>The current plots are static outputs; interactive plotting may be added later.</li>
+        <li>The notebook is intended for inspection, modification, and rerunning by researchers.</li>
       </ul>
     </section>
   </main>

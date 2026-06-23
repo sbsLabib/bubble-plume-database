@@ -343,6 +343,43 @@ h3 {
   color: var(--muted);
 }
 
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--white);
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.figure-grid figure {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--white);
+}
+
+.figure-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
+.figure-grid figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .figure-list li,
 .data-notes-list li {
   padding-left: 2px;
@@ -658,6 +695,7 @@ a:focus-visible {
   }
 
   .card-grid,
+  .figure-grid,
   .roadmap {
     grid-template-columns: 1fr;
   }
