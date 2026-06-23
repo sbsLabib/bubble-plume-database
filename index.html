@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="A curated repository of literature-based datasets for bubble plume research, comparison, and reuse."
+    content="A compact GitHub Pages data portal for raw and processed bubble plume datasets from key publications."
   />
   <title>Bubble Plume Data Repository</title>
   <link rel="stylesheet" href="style.css" />
@@ -13,7 +13,6 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Site navigation and introductory content -->
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
       <a class="logo" href="#top" aria-label="Bubble Plume Data Repository home">
@@ -21,195 +20,141 @@
         <span>Bubble Plume Data Repository</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#database">Data model</a></li>
-        <li><a href="#visualization">Compare data</a></li>
-        <li><a href="group.html">Research Group</a></li>
-        <li><a href="#status">Roadmap</a></li>
+        <li><a href="#top" aria-current="page">Home</a></li>
+        <li><a href="#data-catalog">Data catalog</a></li>
+        <li><a href="#key-figures">Key figures</a></li>
+        <li><a href="#notes">Notes</a></li>
       </ul>
     </nav>
 
-    <section id="top" class="hero">
+    <section id="top" class="hero portal-hero">
       <div class="hero-content">
-        <p class="eyebrow">Open research data for bubble plume studies</p>
-        <h1>Find, understand, and compare bubble plume data.</h1>
-        <p class="hero-text">
-          A curated repository that brings experimental data from published literature into clear,
-          reusable datasets&mdash;with source context, consistent metadata, and tools for comparison.
+        <p class="eyebrow">Academic research data portal</p>
+        <h1>Bubble Plume Data Repository</h1>
+        <p class="purpose-statement">
+          A unified platform for sourcing raw and processed bubble plume data from key publications.
         </p>
-        <div class="hero-buttons">
-          <a class="primary-button" href="#database">Explore the data model</a>
-          <a class="secondary-button" href="#status">See the roadmap</a>
-        </div>
+        <p class="hero-text">
+          This repository collects, organizes, and provides access to bubble plume datasets extracted from
+          selected publications. The goal is to make raw and processed data easier to find, download,
+          reproduce, and compare.
+        </p>
       </div>
-
-      <aside class="scope-card" aria-label="Repository scope">
-        <p class="scope-label">Repository scope</p>
-        <ul>
-          <li>Literature-based experimental data</li>
-          <li>Documented units and methods</li>
-          <li>Downloadable, analysis-ready CSV files</li>
-          <li>Transparent source and digitization notes</li>
-        </ul>
-      </aside>
     </section>
   </header>
 
-  <!-- Each section below matches a link in the navigation above. -->
   <main id="main-content">
-    <section id="about" class="section intro-section">
+    <section id="data-catalog" class="section">
       <div class="section-heading">
-        <p class="eyebrow">About the project</p>
-        <h2>Scattered results, brought into one research-ready collection</h2>
-      </div>
-      <div class="two-column">
-        <p class="lead-text">
-          Bubble plume data appear across journal figures, tables, appendices, and supplementary files.
-          Differences in terminology, units, and reporting make studies difficult to compare.
-        </p>
-        <p>
-          This repository will preserve each dataset alongside its publication, experimental conditions,
-          measurement method, and interpretation notes. The aim is a resource that researchers and students
-          can inspect, download, cite, and build upon with confidence.
-        </p>
-      </div>
-    </section>
-
-    <section id="database" class="section accent-section">
-      <div class="section-heading">
-        <p class="eyebrow">Data model</p>
-        <h2>Context travels with every dataset</h2>
+        <p class="eyebrow">Available records</p>
+        <h2>Data catalog</h2>
         <p class="section-intro">
-          Each entry is designed to answer three practical questions: Where did the data come from?
-          What does each value mean? What should a researcher know before reusing it?
+          Each record links to the paper DOI and the current CSV dataset page. Plot notebooks are planned
+          but are not included in this prototype.
         </p>
       </div>
 
-      <div class="card-grid">
-        <article class="info-card">
-          <span class="card-number">01</span>
-          <h3>Source publication</h3>
-          <p>Citation, authors, publication year, study purpose, and a concise summary of the experiment.</p>
-        </article>
-
-        <article class="info-card">
-          <span class="card-number">02</span>
-          <h3>Structured dataset</h3>
-          <p>CSV files with descriptive column names, units, variable definitions, and source figure or table.</p>
-        </article>
-
-        <article class="info-card">
-          <span class="card-number">03</span>
-          <h3>Reusable metadata</h3>
-          <p>Plume regime, diffuser type, gas flow rate, measurement method, and dimensional basis.</p>
-        </article>
-      </div>
-
-      <div class="dataset-records" aria-label="Available paper and dataset records">
-        <article class="featured-dataset primary-record">
-          <div>
-            <p class="placeholder-label">Primary literature series</p>
-            <h3>Milgram 1983 &mdash; Mean flow in round bubble plumes</h3>
-            <p>
-              Five nondimensionalized literature-comparison datasets with separate original-source and
-              processed-data provenance.
-            </p>
-          </div>
-          <a class="dataset-page-link" href="papers/milgram_1983.html">View paper and datasets</a>
-        </article>
-
-        <article class="featured-dataset">
-          <div>
-            <p class="placeholder-label">Source paper and datasets</p>
-            <h3>Li et al. 2020 &mdash; Integral characteristics of bubble plumes</h3>
-            <p>
-              Eight nondimensionalized datasets for air-stone and single-orifice diffuser cases, covering
-              plume half-width, centerline velocity, volume flux, and momentum flux.
-            </p>
-          </div>
-          <a class="dataset-page-link" href="papers/li_2020.html">View paper and datasets</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="visualization" class="section comparison-section">
-      <div class="comparison-copy">
-        <div class="section-heading">
-          <p class="eyebrow">Compare data</p>
-          <h2>Move from discovery to comparison</h2>
-        </div>
-        <p class="section-intro">
-          A lightweight plotting tool is planned for exploring compatible datasets on common axes.
-          Downloads will remain available so that every analysis can also be reproduced independently.
-        </p>
-      </div>
-
-      <ol class="feature-list">
-        <li class="feature-item">
-          <span class="feature-number">01</span>
-          <div>
-            <h3>Select</h3>
-            <p>Choose datasets by publication, experiment, method, or measured quantity.</p>
-          </div>
-        </li>
-        <li class="feature-item">
-          <span class="feature-number">02</span>
-          <div>
-            <h3>Compare</h3>
-            <p>Plot plume width, velocity, gas fraction, spreading rate, and related variables.</p>
-          </div>
-        </li>
-        <li class="feature-item">
-          <span class="feature-number">03</span>
-          <div>
-            <h3>Download</h3>
-            <p>Export the documented source files for independent analysis and reproducible workflows.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section id="group" class="section group-section">
-      <div>
-        <p class="eyebrow">Contributors</p>
-        <h2>Built for a shared research community</h2>
-      </div>
-      <div>
-        <p class="wide-text">
-          Visit the research group page for an early-stage overview of the project team, research focus,
-          related work, and future collaboration information.
-        </p>
-        <a class="primary-button group-page-link" href="group.html">View the research group page</a>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Bubble plume data catalog">
+        <table class="dataset-table catalog-table">
+          <thead>
+            <tr>
+              <th scope="col">Publication</th>
+              <th scope="col">Dataset description</th>
+              <th scope="col">DOI</th>
+              <th scope="col">CSV data</th>
+              <th scope="col">Plot notebook</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Milgram, J. H. (1983). Mean flow in round bubble plumes.
+                <cite>Journal of Fluid Mechanics</cite>, 133, 345&ndash;376.
+              </td>
+              <td>
+                Nondimensionalized literature-comparison data for plume half-width, centerline velocity,
+                volume flux, momentum flux, and entrainment coefficient.
+              </td>
+              <td>
+                <a class="download-link" href="https://doi.org/10.1017/S0022112083001950">
+                  DOI
+                </a>
+              </td>
+              <td>
+                <a class="download-link" href="papers/milgram_1983.html">Dataset page</a>
+              </td>
+              <td>Coming soon</td>
+              <td>
+                Milgram 1983 is the original literature series represented. Current CSVs are processed
+                nondimensional comparison data.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Li, G., Wang, B., Wu, H., &amp; DiMarco, S. F. (2020). Impact of bubble size on the integral
+                characteristics of bubble plumes in quiescent and unstratified water.
+                <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
+              </td>
+              <td>
+                Nondimensionalized air-stone and single-orifice plume datasets for plume half-width,
+                centerline velocity, volume flux, and momentum flux.
+              </td>
+              <td>
+                <a class="download-link" href="https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230">
+                  DOI
+                </a>
+              </td>
+              <td>
+                <a class="download-link" href="papers/li_2020.html">Dataset page</a>
+              </td>
+              <td>Coming soon</td>
+              <td>
+                Air-stone and single-orifice cases are stored separately under
+                <code>csv/li_2020_complete_cleaned/</code>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section id="status" class="section status-section">
+    <section id="key-figures" class="section accent-section">
       <div class="section-heading">
-        <p class="eyebrow">Project roadmap</p>
-        <h2>Starting with a trustworthy foundation</h2>
-        <p class="section-intro">The project is currently an early prototype. Development will proceed in focused, reviewable stages.</p>
+        <p class="eyebrow">Planned reproducible plots</p>
+        <h2>Key figures</h2>
+        <p class="section-intro">
+          Python notebooks for reproducing these figures will be added as the plotting workflow is finalized.
+        </p>
       </div>
 
-      <ol class="roadmap" aria-label="Development roadmap">
-        <li class="roadmap-item current">
-          <span>Now</span>
-          <strong>Define the metadata template</strong>
-        </li>
-        <li class="roadmap-item">
-          <span>Next</span>
-          <strong>Publish representative sample datasets</strong>
-        </li>
-        <li class="roadmap-item">
-          <span>Then</span>
-          <strong>Add browsing, filtering, and comparison</strong>
-        </li>
-      </ol>
+      <ul class="compact-list figure-list">
+        <li><strong>Plume half-width scaling:</strong> b_g/D vs z/D</li>
+        <li><strong>Centerline velocity scaling:</strong> W_c/W_s vs z/D</li>
+        <li><strong>Volume flux scaling:</strong> Q/(D<sup>2</sup> W_s) vs z/D</li>
+        <li><strong>Momentum flux scaling:</strong> M/(D<sup>2</sup> W_s<sup>2</sup>) vs z/D</li>
+      </ul>
+    </section>
+
+    <section id="notes" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Repository notes</p>
+        <h2>Data notes</h2>
+      </div>
+
+      <ul class="compact-list data-notes-list">
+        <li>Processed CSV files are cleaned and sorted for plotting.</li>
+        <li>Raw and processed data will be separated where both are available.</li>
+        <li>Each dataset should retain citation and provenance information.</li>
+        <li>Paper access is provided through DOI links only.</li>
+        <li>Future updates will include reproducible plotting notebooks.</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <p><strong>Bubble Plume Data Repository</strong></p>
-    <p>Academic research prototype &middot; 2026</p>
+    <p>Static GitHub Pages research data portal &middot; 2026</p>
   </footer>
 </body>
 </html>
