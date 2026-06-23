@@ -1,5 +1,0 @@
-cleaned_file,uploaded_source_file,source_label_in_uploaded_file,row_count,x_variable,y_variable,source_figure
-b_g_over_D_vs_z_hat.csv,zhat_v_bgD.csv,Lietal19,16,z_hat,b_g_over_D,"Li et al. (2020), Figure 10a"
-centerline_velocity_over_W_s_vs_z_hat.csv,zhat_v_WcWs.csv,Lietal19,19,z_hat,W_c_over_W_s,"Li et al. (2020), Figure 10b"
-volume_flux_over_D2_W_s_vs_z_hat.csv,zhat_v_Qhat.csv,Lietal19,18,z_hat,Q_over_D2_W_s,"Li et al. (2020), Figure 11a"
-momentum_flux_over_D2_W_s2_vs_z_hat.csv,zhat_v_Mhat.csv,Lietal19,18,z_hat,M_over_D2_W_s2,"Li et al. (2020), Figure 11b"

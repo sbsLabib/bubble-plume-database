@@ -14,7 +14,7 @@ The website is intentionally built with plain HTML and CSS so it can be hosted d
 - `AGENTS.md` contains project instructions for future Codex tasks.
 - `LICENSE` contains the repository license.
 - `csv/milgram_1983_cleaned/` contains the cleaned Milgram83 literature-comparison CSV files.
-- `csv/li_2020_cleaned/` contains the cleaned Li et al. 2020 nondimensionalized CSV files.
+- `csv/li_2020_complete_cleaned/` contains the complete cleaned Li et al. 2020 datasets, separated into air-stone and single-orifice cases.
 
 There is no JavaScript file yet because the current homepage does not need one.
 

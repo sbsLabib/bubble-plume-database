@@ -59,7 +59,7 @@
           </div>
           <div>
             <dt>Available files</dt>
-            <dd>4 CSV datasets</dd>
+            <dd>8 CSV datasets</dd>
           </div>
         </dl>
       </aside>
@@ -67,6 +67,21 @@
   </header>
 
   <main id="main-content">
+    <section class="paper-synopsis" aria-labelledby="li-synopsis-heading">
+      <div class="paper-synopsis-inner">
+        <h2 id="li-synopsis-heading">Paper synopsis</h2>
+        <p>
+          Li et al. (2020) experimentally investigated how bubble size and bubble population modify the
+          integral behavior of bubble plumes in quiescent, unstratified water. The study compares air-stone
+          diffuser cases with many small bubbles against single-orifice diffuser cases with fewer larger
+          bubbles. Using PIV-based velocity measurements, the paper reports the evolution of plume half-width,
+          centerline velocity, liquid volume flux, momentum flux, entrainment coefficient, and momentum
+          amplification factor, and evaluates nondimensional scaling using the plume length scale D and bubble
+          slip velocity W_s.
+        </p>
+      </div>
+    </section>
+
     <section class="section citation-section">
       <div class="section-heading">
         <p class="eyebrow">Primary citation</p>
@@ -88,61 +103,113 @@
     <section id="datasets" class="section accent-section dataset-section">
       <div class="section-heading">
         <p class="eyebrow">Available datasets</p>
-        <h2>Li et al. 2020 cleaned CSV files</h2>
+        <h2>Li et al. 2020 complete cleaned CSV files</h2>
         <p class="section-intro">
-          The variable descriptions below use the current repository terminology and preserve the exact
-          machine-readable column names used in each CSV file.
+          Air-stone and single-orifice diffuser cases are stored separately. The variable descriptions below
+          use the current repository terminology and preserve the exact column names used in each CSV file.
         </p>
       </div>
 
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Li et al. 2020 dataset downloads">
-        <table class="dataset-table wide-table">
-          <caption>Nondimensionalized plotting datasets from Li et al. (2020)</caption>
-          <thead>
-            <tr>
-              <th scope="col">Dataset name</th>
-              <th scope="col">X variable</th>
-              <th scope="col">Y variable</th>
-              <th scope="col">Source figure</th>
-              <th scope="col">Format</th>
-              <th scope="col">File</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Nondimensional plume half-width</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>b_g_over_D</code><span class="variable-definition">b_g/D; plume half-width normalized by D</span></td>
-              <td>Figure 10a</td>
-              <td>CSV</td>
-              <td><a class="download-link" href="../csv/li_2020_cleaned/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Normalized centerline velocity</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>W_c_over_W_s</code><span class="variable-definition">W_c/W_s; normalized by bubble slip velocity</span></td>
-              <td>Figure 10b</td>
-              <td>CSV</td>
-              <td><a class="download-link" href="../csv/li_2020_cleaned/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Nondimensional liquid volume flux</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>Q_over_D2_W_s</code><span class="variable-definition">Q/(D<sup>2</sup> W_s)</span></td>
-              <td>Figure 11a</td>
-              <td>CSV</td>
-              <td><a class="download-link" href="../csv/li_2020_cleaned/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Nondimensional momentum flux</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>M_over_D2_W_s2</code><span class="variable-definition">M/(D<sup>2</sup> W_s<sup>2</sup>)</span></td>
-              <td>Figure 11b</td>
-              <td>CSV</td>
-              <td><a class="download-link" href="../csv/li_2020_cleaned/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="dataset-group">
+        <div class="dataset-group-heading">
+          <h3>Air-stone diffuser cases</h3>
+          <p>Cases characterized by many smaller bubbles produced by an air-stone diffuser.</p>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Air-stone diffuser dataset downloads">
+          <table class="dataset-table">
+            <caption>Air-stone diffuser datasets</caption>
+            <thead>
+              <tr>
+                <th scope="col">Dataset name</th>
+                <th scope="col">X variable</th>
+                <th scope="col">Y variable</th>
+                <th scope="col">Source figure</th>
+                <th scope="col">File</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nondimensional plume half-width</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>b_g_over_D</code><span class="variable-definition">b_g/D; nondimensional plume half-width</span></td>
+                <td>Figure 10a</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/air_stone/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Normalized centerline velocity</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>W_c_over_W_s</code><span class="variable-definition">W_c/W_s; normalized by bubble slip velocity</span></td>
+                <td>Figure 10b</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/air_stone/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional liquid volume flux</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>Q_over_D2_W_s</code><span class="variable-definition">Q/(D<sup>2</sup> W_s); nondimensional liquid volume flux</span></td>
+                <td>Figure 11a</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/air_stone/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional momentum flux</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>M_over_D2_W_s2</code><span class="variable-definition">M/(D<sup>2</sup> W_s<sup>2</sup>); nondimensional momentum flux</span></td>
+                <td>Figure 11b</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/air_stone/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dataset-group">
+        <div class="dataset-group-heading">
+          <h3>Single-orifice diffuser cases</h3>
+          <p>Cases characterized by fewer, larger bubbles produced by a single-orifice diffuser.</p>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Single-orifice diffuser dataset downloads">
+          <table class="dataset-table">
+            <caption>Single-orifice diffuser datasets</caption>
+            <thead>
+              <tr>
+                <th scope="col">Dataset name</th>
+                <th scope="col">X variable</th>
+                <th scope="col">Y variable</th>
+                <th scope="col">Source figure</th>
+                <th scope="col">File</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nondimensional plume half-width</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>b_g_over_D</code><span class="variable-definition">b_g/D; nondimensional plume half-width</span></td>
+                <td>Figure 10a</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/single_orifice/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Normalized centerline velocity</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>W_c_over_W_s</code><span class="variable-definition">W_c/W_s; normalized by bubble slip velocity</span></td>
+                <td>Figure 10b</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/single_orifice/centerline_velocity_over_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional liquid volume flux</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>Q_over_D2_W_s</code><span class="variable-definition">Q/(D<sup>2</sup> W_s); nondimensional liquid volume flux</span></td>
+                <td>Figure 11a</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/single_orifice/volume_flux_over_D2_W_s_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+              <tr>
+                <td>Nondimensional momentum flux</td>
+                <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
+                <td><code>M_over_D2_W_s2</code><span class="variable-definition">M/(D<sup>2</sup> W_s<sup>2</sup>); nondimensional momentum flux</span></td>
+                <td>Figure 11b</td>
+                <td><a class="download-link" href="../csv/li_2020_complete_cleaned/single_orifice/momentum_flux_over_D2_W_s2_vs_z_hat.csv" download>Download CSV</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -154,8 +221,9 @@
       <ul class="data-notes-list">
         <li>The cleaned CSV files contain nondimensionalized plotting data.</li>
         <li>Rows were sorted numerically by <code>z_hat</code>.</li>
-        <li>Case labels such as AS/SO or Q1/Q2 are not included unless explicitly available in the CSV files.</li>
-        <li>Future metadata may add case-level labels and experimental-condition fields.</li>
+        <li>Air-stone and single-orifice datasets are stored separately.</li>
+        <li>Q1/Q2 or curve-level labels are not yet included unless explicitly available in the CSV files.</li>
+        <li>Future metadata may add case-level labels, gas flow rate, diffuser type, and bubble-size information.</li>
       </ul>
     </section>
   </main>
