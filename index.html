@@ -15,19 +15,19 @@
 
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
-      <a class="logo" href="#top" aria-label="Bubble Plume Data Repository home">
+      <a class="logo" href="#home" aria-label="Bubble Plume Data Repository home">
         <span class="logo-mark" aria-hidden="true"></span>
         <span>Bubble Plume Data Repository</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#top" aria-current="page">Home</a></li>
+        <li><a href="#home" aria-current="page">Home</a></li>
         <li><a href="#data-catalog">Data catalog</a></li>
-        <li><a href="#key-figures">Key figures</a></li>
+        <li><a href="#reproducible-plots">Reproducible plots</a></li>
         <li><a href="#notes">Notes</a></li>
       </ul>
     </nav>
 
-    <section id="top" class="hero portal-hero">
+    <section id="home" class="hero portal-hero">
       <div class="hero-content">
         <h1>Bubble Plume Data Repository</h1>
         <p class="purpose-statement">
@@ -47,9 +47,8 @@
       <div class="section-heading">
         <h2>Data catalog</h2>
         <p class="section-intro">
-          Each record links to the paper DOI and the current paper-level data downloads. CSV files are the
-          machine-readable source for reproducible analysis; XLSX files are formatted companion workbooks for
-          human review.
+          Each record provides the paper DOI and two data download options. CSV files are intended for
+          reproducible analysis, while XLSX files are formatted companion workbooks for easier inspection.
         </p>
       </div>
 
@@ -58,10 +57,10 @@
           <thead>
             <tr>
               <th scope="col">Publication</th>
-              <th scope="col">Dataset description</th>
+              <th scope="col">Data type</th>
               <th scope="col">DOI</th>
-              <th scope="col">Data downloads</th>
-              <th scope="col">Plot notebook</th>
+              <th scope="col">CSV</th>
+              <th scope="col">XLSX</th>
               <th scope="col">Notes</th>
             </tr>
           </thead>
@@ -72,8 +71,7 @@
                 <cite>Journal of Fluid Mechanics</cite>, 133, 345&ndash;376.
               </td>
               <td>
-                Selected dimensional tabular data from the original Milgram tables, with citation and
-                provenance fields included in the paper-level data file.
+                Tabular data
               </td>
               <td>
                 <a class="download-link" href="https://doi.org/10.1017/S0022112083001950">
@@ -81,15 +79,15 @@
                 </a>
               </td>
               <td>
-                <span class="download-pair">
-                  <a class="download-link" href="csv/paper_data_downloads/csv/papers/milgram_1983.csv" download>CSV</a>
-                  <span aria-hidden="true">|</span>
-                  <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/milgram_1983.xlsx" download>XLSX</a>
-                </span>
+                <a class="download-link" href="csv/paper_data_downloads/csv/papers/milgram_1983.csv" download>CSV</a>
               </td>
-              <td><a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Notebook</a></td>
               <td>
-                Public downloads use one paper-level CSV and one formatted XLSX workbook.
+                <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/milgram_1983.xlsx" download>XLSX</a>
+              </td>
+              <td>
+                Selected dimensional data from Milgram&rsquo;s original tables. Use <code>source_table</code>
+                and <code>table_title</code> to identify each table block. CSV is for analysis; XLSX is for
+                easier inspection.
               </td>
             </tr>
             <tr>
@@ -99,8 +97,7 @@
                 <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
               </td>
               <td>
-                Wide paired-series data for nondimensional comparison plots, including air-stone,
-                single-orifice, and literature-series columns.
+                Nondimensionalized comparison data
               </td>
               <td>
                 <a class="download-link" href="https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230">
@@ -108,15 +105,14 @@
                 </a>
               </td>
               <td>
-                <span class="download-pair">
-                  <a class="download-link" href="csv/paper_data_downloads/csv/papers/li_2020.csv" download>CSV</a>
-                  <span aria-hidden="true">|</span>
-                  <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/li_2020.xlsx" download>XLSX</a>
-                </span>
+                <a class="download-link" href="csv/paper_data_downloads/csv/papers/li_2020.csv" download>CSV</a>
               </td>
-              <td><a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Notebook</a></td>
               <td>
-                CSV uses a wide paired-series format for nondimensional comparison plots.
+                <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/li_2020.xlsx" download>XLSX</a>
+              </td>
+              <td>
+                Wide paired-series format for nondimensional scaling plots. Each series has adjacent x-y
+                columns. CSV is for analysis; XLSX is for easier inspection.
               </td>
             </tr>
           </tbody>
@@ -124,7 +120,7 @@
       </div>
     </section>
 
-    <section id="key-figures" class="section accent-section">
+    <section id="reproducible-plots" class="section accent-section">
       <div class="section-heading">
         <h2>Reproducible plots</h2>
         <p class="section-intro">
@@ -189,14 +185,14 @@
 
     <section id="notes" class="section">
       <div class="section-heading">
-        <h2>Reproducibility notes</h2>
+        <h2>Notes</h2>
       </div>
 
       <ul class="compact-list data-notes-list">
-        <li>The notebook reads the paper-level Li et al. 2020 master CSV using a relative repository path.</li>
-        <li>Figures are saved to <code>figures/literature_scaling/</code>.</li>
-        <li>The current plots are static outputs; interactive plotting may be added later.</li>
-        <li>The notebook is intended for inspection, modification, and rerunning by researchers.</li>
+        <li>CSV files are the primary machine-readable data files.</li>
+        <li>XLSX files are formatted companion workbooks with a Details sheet and a Data sheet.</li>
+        <li>Older split CSV files are retained only as source/development files and are not the main public downloads.</li>
+        <li>Future datasets should follow the same structure: one CSV and one formatted XLSX per paper.</li>
       </ul>
     </section>
   </main>

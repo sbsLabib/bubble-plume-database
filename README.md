@@ -1,16 +1,12 @@
 # Bubble Plume Data Repository
 
-This repository contains the first homepage prototype for the Bubble Plume Data Repository. The project will eventually organize literature-based bubble plume datasets, paper synopses, experimental metadata, and tools for comparing compatible datasets.
+This repository contains a one-page GitHub Pages data catalog for the Bubble Plume Data Repository. The site provides DOI links, paper-level CSV/XLSX downloads, and reproducible plotting resources for selected bubble plume publications.
 
 The website is intentionally built with plain HTML and CSS so it can be hosted directly with GitHub Pages. No build tools or programming frameworks are required.
 
 ## Project files
 
-- `index.html` contains the homepage text and page structure.
-- `group.html` contains the research group page and its placeholder profiles.
-- `papers/milgram_1983.html` contains the Milgram 1983 paper and dataset detail page.
-- `papers/milgram_1983_tabular.html` contains selected dimensional tabular data extracted from Milgram 1983.
-- `papers/li_2020.html` contains the Li et al. 2020 paper and dataset detail page.
+- `index.html` contains the one-page public website and data catalog.
 - `style.css` contains the colors, spacing, responsive layout, and other visual styles.
 - `notebooks/plot_literature_scaling.ipynb` contains the reproducible plotting notebook for literature-scaling figures.
 - `scripts/plot_literature_scaling.py` contains the script version of the plotting workflow.
@@ -23,9 +19,11 @@ The website is intentionally built with plain HTML and CSS so it can be hosted d
 
 There is no JavaScript file yet because the current homepage does not need one.
 
+The public website is intended to work as a single page. Older secondary pages may remain in the repository for reference, but users should not need them to find DOI links, data downloads, or plotting resources.
+
 ## Paper data downloads
 
-Public data files now live under `csv/paper_data_downloads/`.
+Public data files live under `csv/paper_data_downloads/`.
 
 Each paper should provide:
 
@@ -34,7 +32,7 @@ Each paper should provide:
 
 CSV files are intended for reproducible analysis in scripts, notebooks, and other machine-readable workflows. XLSX files are formatted companion workbooks for human inspection and include a Details sheet plus a Data sheet.
 
-Older split CSVs are source/development files. They may be retained in `csv/archive_source_files/`, but they should not be used as public website downloads.
+Older split CSV folders are source/development files. They may be retained in `csv/archive_source_files/`, but they are not the main public downloads.
 
 ## Reproducible plotting
 
@@ -84,7 +82,7 @@ After later changes, push the updated files to `main`. GitHub Pages will publish
 
 ## Current scope
 
-This repository currently contains a static homepage data portal, paper/dataset pages, CSV datasets, and a reproducible plotting workflow. Planned later work includes:
+This repository currently contains a one-page static data catalog, paper-level CSV/XLSX downloads, and a reproducible plotting workflow. Planned later work includes:
 
 - defining a consistent metadata template;
 - adding paper summaries and source information;
