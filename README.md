@@ -18,11 +18,23 @@ The website is intentionally built with plain HTML and CSS so it can be hosted d
 - `requirements.txt` lists the Python packages needed for the plotting workflow.
 - `AGENTS.md` contains project instructions for future Codex tasks.
 - `LICENSE` contains the repository license.
-- `csv/milgram_1983_cleaned/` contains the cleaned Milgram83 literature-comparison CSV files.
-- `csv/li_2020_complete_cleaned/` contains the complete cleaned Li et al. 2020 datasets, separated into air-stone and single-orifice cases.
-- `csv/milgram83_tabular_and_related_nondim_data/` contains selected Milgram 1983 tabular data and related nondimensional literature-series datasets.
+- `csv/paper_data_downloads/` contains the public paper-level CSV and XLSX downloads.
+- `csv/archive_source_files/` contains older split CSV folders and source/development files retained for provenance.
 
 There is no JavaScript file yet because the current homepage does not need one.
+
+## Paper data downloads
+
+Public data files now live under `csv/paper_data_downloads/`.
+
+Each paper should provide:
+
+- one official CSV file in `csv/paper_data_downloads/csv/papers/`;
+- one formatted XLSX file in `csv/paper_data_downloads/xlsx/papers/`.
+
+CSV files are intended for reproducible analysis in scripts, notebooks, and other machine-readable workflows. XLSX files are formatted companion workbooks for human inspection and include a Details sheet plus a Data sheet.
+
+Older split CSVs are source/development files. They may be retained in `csv/archive_source_files/`, but they should not be used as public website downloads.
 
 ## Reproducible plotting
 
@@ -44,7 +56,7 @@ Open the notebook version for inspection, modification, and rerunning:
 jupyter notebook notebooks/plot_literature_scaling.ipynb
 ```
 
-The generated static figures are saved in `figures/literature_scaling/`.
+The plotting workflow reads the paper-level Li et al. 2020 master CSV in `csv/paper_data_downloads/csv/papers/li_2020.csv`. The generated static figures are saved in `figures/literature_scaling/`.
 
 ## Preview the website locally
 

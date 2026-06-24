@@ -47,8 +47,9 @@
       <div class="section-heading">
         <h2>Data catalog</h2>
         <p class="section-intro">
-          Each record links to the paper DOI and the current CSV dataset page. Plot notebooks are planned
-          but are not included in this prototype.
+          Each record links to the paper DOI and the current paper-level data downloads. CSV files are the
+          machine-readable source for reproducible analysis; XLSX files are formatted companion workbooks for
+          human review.
         </p>
       </div>
 
@@ -59,7 +60,7 @@
               <th scope="col">Publication</th>
               <th scope="col">Dataset description</th>
               <th scope="col">DOI</th>
-              <th scope="col">CSV data</th>
+              <th scope="col">Data downloads</th>
               <th scope="col">Plot notebook</th>
               <th scope="col">Notes</th>
             </tr>
@@ -71,8 +72,8 @@
                 <cite>Journal of Fluid Mechanics</cite>, 133, 345&ndash;376.
               </td>
               <td>
-                Nondimensionalized comparison data plus selected dimensional tabular data from the original
-                Milgram tables.
+                Selected dimensional tabular data from the original Milgram tables, with citation and
+                provenance fields included in the paper-level data file.
               </td>
               <td>
                 <a class="download-link" href="https://doi.org/10.1017/S0022112083001950">
@@ -80,14 +81,15 @@
                 </a>
               </td>
               <td>
-                <ul class="table-link-list">
-                  <li><a class="download-link" href="papers/milgram_1983.html">Nondimensional comparison data</a></li>
-                  <li><a class="download-link" href="papers/milgram_1983_tabular.html">Selected tabular data</a></li>
-                </ul>
+                <span class="download-pair">
+                  <a class="download-link" href="csv/paper_data_downloads/csv/papers/milgram_1983.csv" download>CSV</a>
+                  <span aria-hidden="true">|</span>
+                  <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/milgram_1983.xlsx" download>XLSX</a>
+                </span>
               </td>
-              <td>Coming soon</td>
+              <td><a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Notebook</a></td>
               <td>
-                Keep nondimensional comparison files separate from selected dimensional tabular files.
+                Public downloads use one paper-level CSV and one formatted XLSX workbook.
               </td>
             </tr>
             <tr>
@@ -97,8 +99,8 @@
                 <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
               </td>
               <td>
-                Nondimensionalized air-stone and single-orifice plume datasets for plume half-width,
-                centerline velocity, volume flux, and momentum flux.
+                Wide paired-series data for nondimensional comparison plots, including air-stone,
+                single-orifice, and literature-series columns.
               </td>
               <td>
                 <a class="download-link" href="https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230">
@@ -106,12 +108,15 @@
                 </a>
               </td>
               <td>
-                <a class="download-link" href="papers/li_2020.html">Dataset page</a>
+                <span class="download-pair">
+                  <a class="download-link" href="csv/paper_data_downloads/csv/papers/li_2020.csv" download>CSV</a>
+                  <span aria-hidden="true">|</span>
+                  <a class="download-link" href="csv/paper_data_downloads/xlsx/papers/li_2020.xlsx" download>XLSX</a>
+                </span>
               </td>
-              <td>Coming soon</td>
+              <td><a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Notebook</a></td>
               <td>
-                Air-stone and single-orifice cases are stored separately under
-                <code>csv/li_2020_complete_cleaned/</code>.
+                CSV uses a wide paired-series format for nondimensional comparison plots.
               </td>
             </tr>
           </tbody>
@@ -123,9 +128,9 @@
       <div class="section-heading">
         <h2>Reproducible plots</h2>
         <p class="section-intro">
-          Key nondimensional scaling figures are generated directly from the cleaned CSV datasets using a
-          Python notebook. The static figures shown below are produced from the same notebook so users can
-          download the data, inspect the workflow, and reproduce the plots.
+          Key nondimensional scaling figures are generated directly from the paper-level Li et al. 2020
+          master CSV using a Python notebook. The static figures shown below are produced from the same
+          notebook so users can download the data, inspect the workflow, and reproduce the plots.
         </p>
       </div>
 
@@ -188,7 +193,7 @@
       </div>
 
       <ul class="compact-list data-notes-list">
-        <li>The notebook reads CSV files using relative repository paths.</li>
+        <li>The notebook reads the paper-level Li et al. 2020 master CSV using a relative repository path.</li>
         <li>Figures are saved to <code>figures/literature_scaling/</code>.</li>
         <li>The current plots are static outputs; interactive plotting may be added later.</li>
         <li>The notebook is intended for inspection, modification, and rerunning by researchers.</li>

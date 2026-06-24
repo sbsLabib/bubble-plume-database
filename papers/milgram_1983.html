@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Nondimensionalized literature-comparison datasets representing the Milgram 1983 round bubble plume study."
+    content="Paper-level CSV and XLSX downloads for Milgram 1983 bubble plume data."
   />
   <title>Milgram 1983 | Bubble Plume Data Repository</title>
   <link rel="stylesheet" href="../style.css" />
@@ -32,28 +32,25 @@
         <h1>Milgram 1983</h1>
         <p class="paper-title">Mean flow in round bubble plumes</p>
         <p class="hero-text">
-          Nondimensionalized literature-comparison datasets describing mean-flow characteristics of round
-          bubble plumes represented by the Milgram83 literature series.
+          Paper-level downloads for selected dimensional tabular data from Milgram (1983). The CSV is the
+          official clean data file for reproducible analysis; the XLSX is a formatted companion workbook for
+          human review.
         </p>
       </div>
 
       <aside class="scope-card" aria-label="Dataset summary">
         <dl class="paper-facts">
           <div>
-            <dt>Original source</dt>
-            <dd>Milgram (1983)</dd>
+            <dt>Data structure</dt>
+            <dd>One paper-level CSV and one XLSX workbook</dd>
           </div>
           <div>
-            <dt>Processed-data source</dt>
-            <dd>Li et al. (2020)</dd>
+            <dt>XLSX sheets</dt>
+            <dd>Details and Data</dd>
           </div>
           <div>
-            <dt>Data type</dt>
-            <dd>Nondimensionalized comparison data</dd>
-          </div>
-          <div>
-            <dt>Available files</dt>
-            <dd>5 CSV datasets</dd>
+            <dt>Paper access</dt>
+            <dd>DOI link only</dd>
           </div>
         </dl>
       </aside>
@@ -67,138 +64,78 @@
         <p>
           Milgram (1983) is a foundational study on the mean-flow behavior of round bubble plumes. The paper
           reviews previous experimental studies, identifies reliable datasets, introduces larger-scale
-          measurements, and combines these results with integral plume theory. The study focuses on the
-          established-flow region of air bubble plumes in water and develops relationships connecting local
-          plume properties with entrainment coefficient and momentum contribution from turbulent velocity
-          fluctuations.
+          measurements, and combines these results with integral plume theory. The selected public download
+          for this repository preserves paper-level data and provenance in a single clean file.
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <h2>Sources and attribution</h2>
-        <p class="section-intro">
-          The original study and the later source used to process the current values are listed separately.
-        </p>
+        <h2>Source publication</h2>
       </div>
 
-      <div class="citation-grid">
-        <article class="citation-card primary-source">
-          <h3>Original literature source</h3>
-          <p>
-            Milgram, J. H. (1983). Mean flow in round bubble plumes. <cite>Journal of Fluid Mechanics</cite>,
-            133, 345&ndash;376.
-          </p>
-          <a class="doi-link" href="https://doi.org/10.1017/S0022112083001950">
-            https://doi.org/10.1017/S0022112083001950
-          </a>
-        </article>
-
-        <article class="citation-card">
-          <h3>Later nondimensional comparison</h3>
-          <p>
-            Li, G., Wang, B., Wu, H., &amp; DiMarco, S. F. (2020). Impact of bubble size on the integral
-            characteristics of bubble plumes in quiescent and unstratified water.
-            <cite>International Journal of Multiphase Flow</cite>, 125, 103230.
-          </p>
-          <a class="doi-link" href="https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230">
-            https://doi.org/10.1016/j.ijmultiphaseflow.2020.103230
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section accent-section provenance-section">
-      <div class="provenance-note">
-        <h2>How to interpret this collection</h2>
+      <article class="citation-card citation-card-wide primary-source">
         <p>
-          The CSV files on this page represent nondimensionalized comparison data for the Milgram83
-          literature series. These values were processed from later nondimensional scaling plots, not directly
-          extracted from Milgram&rsquo;s original tabular data. Milgram (1983) remains the original literature
-          source represented by the series.
+          Milgram, J. H. (1983). Mean flow in round bubble plumes.
+          <cite>Journal of Fluid Mechanics</cite>, 133, 345&ndash;376.
         </p>
-        <p class="related-record-link">
-          For selected dimensional values extracted from Milgram&rsquo;s original tables, see
-          <a class="download-link" href="milgram_1983_tabular.html">View selected dimensional tabular data from Milgram 1983</a>.
-        </p>
-      </div>
+        <a class="doi-link" href="https://doi.org/10.1017/S0022112083001950">
+          https://doi.org/10.1017/S0022112083001950
+        </a>
+      </article>
     </section>
 
-    <section id="datasets" class="section">
+    <section id="downloads" class="section accent-section">
       <div class="section-heading">
-        <h2>Milgram83 cleaned CSV files</h2>
+        <h2>Data downloads</h2>
         <p class="section-intro">
-          Each file contains two columns of nondimensionalized literature-comparison data and can be
-          downloaded directly for inspection or analysis. In this repository, <code>alpha</code> denotes the
-          entrainment coefficient and <code>b_g</code> denotes plume half-width. These files are distinct
-          from the selected dimensional tabular data extracted from Milgram&rsquo;s original tables.
+          CSV files are provided for reproducible analysis. XLSX files are formatted companion workbooks for
+          easier inspection and include a Details sheet plus a Data sheet.
         </p>
       </div>
 
-      <!-- The wrapper allows the table to scroll horizontally on narrow screens. -->
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Milgram 1983 dataset downloads">
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Milgram 1983 data downloads">
         <table class="dataset-table">
-          <caption>Processed datasets representing the Milgram83 literature series</caption>
           <thead>
             <tr>
-              <th scope="col">Dataset name</th>
-              <th scope="col">X variable</th>
-              <th scope="col">Y variable</th>
-              <th scope="col">Data format</th>
-              <th scope="col">File</th>
+              <th scope="col">Format</th>
+              <th scope="col">Purpose</th>
+              <th scope="col">Download</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Entrainment coefficient</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>alpha</code><span class="variable-definition">Entrainment coefficient</span></td>
-              <td>CSV, 2 columns</td>
-              <td><a class="download-link" href="../csv/milgram_1983_cleaned/alpha_vs_z_hat.csv" download>Download CSV</a></td>
+              <td>CSV</td>
+              <td>Machine-readable official clean data file for reproducible analysis.</td>
+              <td><a class="download-link" href="../csv/paper_data_downloads/csv/papers/milgram_1983.csv" download>Download CSV</a></td>
             </tr>
             <tr>
-              <td>Nondimensional plume half-width</td>
-              <td><code>z_hat</code><span class="variable-definition">z/D</span></td>
-              <td><code>b_g_over_D</code><span class="variable-definition">b_g/D; plume half-width normalized by D</span></td>
-              <td>CSV, 2 columns</td>
-              <td><a class="download-link" href="../csv/milgram_1983_cleaned/b_g_over_D_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Centerline velocity</td>
-              <td><code>z_hat</code></td>
-              <td><code>W_c</code></td>
-              <td>CSV, 2 columns</td>
-              <td><a class="download-link" href="../csv/milgram_1983_cleaned/centerline_velocity_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Momentum flux</td>
-              <td><code>z_hat</code></td>
-              <td><code>M</code></td>
-              <td>CSV, 2 columns</td>
-              <td><a class="download-link" href="../csv/milgram_1983_cleaned/momentum_flux_vs_z_hat.csv" download>Download CSV</a></td>
-            </tr>
-            <tr>
-              <td>Volume flux</td>
-              <td><code>z_hat</code></td>
-              <td><code>Q</code></td>
-              <td>CSV, 2 columns</td>
-              <td><a class="download-link" href="../csv/milgram_1983_cleaned/volume_flux_vs_z_hat.csv" download>Download CSV</a></td>
+              <td>XLSX</td>
+              <td>Formatted companion workbook for human review, with Details and Data sheets.</td>
+              <td><a class="download-link" href="../csv/paper_data_downloads/xlsx/papers/milgram_1983.xlsx" download>Download XLSX</a></td>
             </tr>
           </tbody>
         </table>
       </div>
+    </section>
 
-      <p class="metadata-note">
-        <strong>Metadata status:</strong> Variable names and normalization definitions will be refined as the
-        dataset metadata is finalized.
-      </p>
+    <section class="section">
+      <div class="section-heading">
+        <h2>Data notes</h2>
+      </div>
+      <ul class="compact-list data-notes-list">
+        <li>The public website now uses one paper-level CSV and one formatted XLSX workbook for this paper.</li>
+        <li>The CSV is intended for scripts, notebooks, and reproducible analysis.</li>
+        <li>The XLSX is intended for easier inspection by researchers and advisors.</li>
+        <li>Older split CSV files are source/development files and are not linked as public downloads.</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <p><strong>Bubble Plume Data Repository</strong></p>
-    <p>Academic research prototype &middot; 2026</p>
+    <p>Static GitHub Pages research data portal &middot; 2026</p>
   </footer>
 </body>
 </html>

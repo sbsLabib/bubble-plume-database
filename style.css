@@ -308,6 +308,13 @@ h3 {
   padding-left: 18px;
 }
 
+.download-pair {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: baseline;
+}
+
 .download-link,
 .dataset-page-link,
 .doi-link {
