@@ -34,6 +34,23 @@ CSV files are intended for reproducible analysis in scripts, notebooks, and othe
 
 Older split CSV folders are source/development files. They may be retained in `csv/archive_source_files/`, but they are not the main public downloads.
 
+Current public paper downloads include:
+
+- `csv/paper_data_downloads/csv/papers/milgram_1983.csv`
+- `csv/paper_data_downloads/xlsx/papers/milgram_1983.xlsx`
+- `csv/paper_data_downloads/csv/papers/li_2020.csv`
+- `csv/paper_data_downloads/xlsx/papers/li_2020.xlsx`
+- `csv/paper_data_downloads/csv/papers/wang_lai_socolofsky_2019.csv`
+- `csv/paper_data_downloads/xlsx/papers/wang_lai_socolofsky_2019.xlsx`
+
+The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks for:
+
+- Figure 8: `Um/Us` vs `z/D`
+- Figure 10: `alpha` vs `z/D`
+- Figure 11: `b_g/D` vs `z/D`
+- Figure 12a: `Q_hat` vs `z/D`
+- Figure 12b: `M_hat` vs `z/D`
+
 ## Reproducible plotting
 
 Install the plotting requirements from the repository root:
