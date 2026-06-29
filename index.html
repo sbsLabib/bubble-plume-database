@@ -150,22 +150,20 @@
       <div class="section-heading">
         <h2>Reproducible plots</h2>
         <p class="section-intro">
-          Key nondimensional scaling figures are generated directly from the paper-level Li et al. 2020
-          master CSV using a Python notebook. The static figures shown below are produced from the same
-          notebook so users can download the data, inspect the workflow, and reproduce the plots.
+          The notebook reads the paper-level master CSV files and regenerates selected comparison figures.
+          Static examples are shown below, with additional figures saved by the same notebook.
         </p>
       </div>
 
       <div class="resource-links" aria-label="Reproducible plotting resources">
-        <a class="download-link" href="notebooks/plot_literature_scaling.ipynb">Python notebook</a>
-        <a class="download-link" href="scripts/plot_literature_scaling.py">Python script</a>
+        <a class="download-link" href="notebooks/reproducible_plots.ipynb">Python notebook</a>
         <a class="download-link" href="requirements.txt">Requirements</a>
       </div>
 
       <div class="figure-grid">
         <figure>
           <img
-            src="figures/literature_scaling/bgD_vs_zhat.png"
+            src="figures/reproducible_plots/li_2020_bgD_vs_zhat.png"
             alt="Plot of nondimensional plume half-width b_g over D versus z over D."
           />
           <figcaption>
@@ -176,34 +174,34 @@
 
         <figure>
           <img
-            src="figures/literature_scaling/WcWs_vs_zhat.png"
-            alt="Plot of centerline velocity normalized by bubble slip velocity versus z over D."
-          />
-          <figcaption>
-            <strong>Centerline velocity scaling.</strong>
-            W_c/W_s versus z/D from cleaned nondimensional comparison datasets.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="figures/literature_scaling/Qhat_vs_zhat.png"
-            alt="Plot of nondimensional liquid volume flux versus z over D."
-          />
-          <figcaption>
-            <strong>Volume flux scaling.</strong>
-            Q/(D<sup>2</sup> W_s) versus z/D from cleaned nondimensional comparison datasets.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="figures/literature_scaling/Mhat_vs_zhat.png"
+            src="figures/reproducible_plots/li_2020_Mhat_vs_zhat.png"
             alt="Plot of nondimensional momentum flux versus z over D."
           />
           <figcaption>
             <strong>Momentum flux scaling.</strong>
-            M/(D<sup>2</sup> W_s<sup>2</sup>) versus z/D from cleaned nondimensional comparison datasets.
+            M/(D<sup>2</sup> W_s<sup>2</sup>) versus z/D from Li et al. 2020 comparison data.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="figures/reproducible_plots/wang_2019_UmUs_vs_zhat.png"
+            alt="Plot of Wang et al. 2019 normalized mean velocity versus z over D."
+          />
+          <figcaption>
+            <strong>Wang et al. 2019 mean velocity scaling.</strong>
+            U_m/U_s versus z/D from the paper-level master CSV.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="figures/reproducible_plots/wang_2019_alpha_vs_zhat.png"
+            alt="Plot of Wang et al. 2019 apparent entrainment coefficient versus z over D."
+          />
+          <figcaption>
+            <strong>Wang et al. 2019 apparent entrainment coefficient.</strong>
+            alpha versus z/D from the paper-level master CSV.
           </figcaption>
         </figure>
       </div>
