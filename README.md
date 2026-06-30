@@ -41,6 +41,8 @@ Current public paper downloads include:
 - `csv/paper_data_downloads/xlsx/papers/li_2020.xlsx`
 - `csv/paper_data_downloads/csv/papers/wang_lai_socolofsky_2019.csv`
 - `csv/paper_data_downloads/xlsx/papers/wang_lai_socolofsky_2019.xlsx`
+- `csv/paper_data_downloads/csv/papers/kobus_1968.csv`
+- `csv/paper_data_downloads/xlsx/papers/kobus_1968.xlsx`
 
 The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks for:
 
@@ -49,6 +51,12 @@ The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks f
 - Figure 11: `b_g/D` vs `z/D`
 - Figure 12a: `Q_hat` vs `z/D`
 - Figure 12b: `M_hat` vs `z/D`
+
+The Kobus 1968 CSV currently contains single-orifice data blocks for:
+
+- Figure 4: centerline velocity above a single orifice
+- Figure 6: velocity profiles above a single orifice
+- Figure 13: volume flux ratio for a single orifice
 
 ## Reproducible plotting
 
