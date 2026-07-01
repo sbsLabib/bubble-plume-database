@@ -43,6 +43,8 @@ Current public paper downloads include:
 - `csv/paper_data_downloads/xlsx/papers/wang_lai_socolofsky_2019.xlsx`
 - `csv/paper_data_downloads/csv/papers/kobus_1968.csv`
 - `csv/paper_data_downloads/xlsx/papers/kobus_1968.xlsx`
+- `csv/paper_data_downloads/csv/papers/seol_et_al_2007.csv`
+- `csv/paper_data_downloads/xlsx/papers/seol_et_al_2007.xlsx`
 
 The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks for:
 
@@ -57,6 +59,12 @@ The Kobus 1968 CSV currently contains single-orifice data blocks for:
 - Figure 4: centerline velocity above a single orifice
 - Figure 6: velocity profiles above a single orifice
 - Figure 13: volume flux ratio for a single orifice
+
+The Seol et al. 2007 CSV currently contains alpha-only data blocks for:
+
+- Figure 10: alpha versus nondimensional height `z/H_T`
+- Figure 11: alpha versus bubble Froude number `F_B`
+- Figure 12: alpha versus dimensionless slip velocity `u_s/(B/z)^(1/3)`
 
 ## Reproducible plotting
 
