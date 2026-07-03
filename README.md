@@ -45,6 +45,8 @@ Current public paper downloads include:
 - `csv/paper_data_downloads/xlsx/papers/kobus_1968.xlsx`
 - `csv/paper_data_downloads/csv/papers/seol_et_al_2007.csv`
 - `csv/paper_data_downloads/xlsx/papers/seol_et_al_2007.xlsx`
+- `csv/paper_data_downloads/csv/papers/mingotti_woods_2023.csv`
+- `csv/paper_data_downloads/xlsx/papers/mingotti_woods_2023.xlsx`
 
 The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks for:
 
@@ -65,6 +67,15 @@ The Seol et al. 2007 CSV currently contains alpha-only data blocks for:
 - Figure 10: alpha versus nondimensional height `z/H_T`
 - Figure 11: alpha versus bubble Froude number `F_B`
 - Figure 12: alpha versus dimensionless slip velocity `u_s/(B/z)^(1/3)`
+
+The Mingotti & Woods 2023 CSV currently contains slip-plume data blocks for:
+
+- Figure 4(c): `k_b` versus buoyancy flux `B`
+- Figure 4(d): `r_l/r_b` versus buoyancy flux `B`
+- Figure 6(b): `v_l/v_s` versus buoyancy flux `B`
+- Figure 7(d): `lambda` versus buoyancy flux `B`
+
+`B_scaled` is the plotted buoyancy-flux axis value shown as `B × 10^-5 m^4 s^-3`; multiply by `1e-5` to recover `B` in `m^4 s^-3`.
 
 ## Reproducible plotting
 
