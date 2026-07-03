@@ -47,6 +47,8 @@ Current public paper downloads include:
 - `csv/paper_data_downloads/xlsx/papers/seol_et_al_2007.xlsx`
 - `csv/paper_data_downloads/csv/papers/mingotti_woods_2023.csv`
 - `csv/paper_data_downloads/xlsx/papers/mingotti_woods_2023.xlsx`
+- `csv/paper_data_downloads/csv/papers/fraga_et_al_2016.csv`
+- `csv/paper_data_downloads/xlsx/papers/fraga_et_al_2016.xlsx`
 
 The Wang et al. 2019 CSV contains nondimensional weak bubble plume data blocks for:
 
@@ -76,6 +78,15 @@ The Mingotti & Woods 2023 CSV currently contains slip-plume data blocks for:
 - Figure 7(d): `lambda` versus buoyancy flux `B`
 
 `B_scaled` is the plotted buoyancy-flux axis value shown as `B × 10^-5 m^4 s^-3`; multiply by `1e-5` to recover `B` in `m^4 s^-3`.
+
+The Fraga et al. 2016 CSV contains four LES-based bubble plume plot blocks:
+
+- `fig_plume_radius_bwD_vs_zD`: `b_w/D` versus `z/D`
+- `fig_entrainment_velocity_E_vs_Wc`: `E` versus `W_c`
+- `fig_mass_flux_Q_over_wslipD2_vs_zD`: `Q/(w_slip D^2)` versus `z/D`
+- `fig_centerline_velocity_WcWslip_vs_zD`: `W_c/w_slip` versus `z/D`
+
+The paired series are stored as `dp_1mm_x`, `dp_1mm_y`, `dp_2mm_x`, `dp_2mm_y`, `dp_4mm_x`, and `dp_4mm_y`.
 
 ## Reproducible plotting
 
