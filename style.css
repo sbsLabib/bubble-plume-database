@@ -348,6 +348,15 @@ h3 {
   gap: 12px;
 }
 
+.plot-set {
+  margin-top: 18px;
+}
+
+.plot-set h3 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
 .figure-card {
   padding: 6px;
   border: 1px solid rgba(148, 163, 184, 0.35);

@@ -255,8 +255,9 @@
       <div class="section-heading">
         <h2>Reproducible plots</h2>
         <p class="section-intro">
-          The notebook can generate all plots for a selected paper and can overlay comparable quantities
-          across multiple papers.
+          The notebook can generate all plots for a selected paper and can also compare compatible
+          quantities across multiple papers. The examples below show complete reconstructed plot sets
+          for Li et al. 2020 and Fraga et al. 2016.
         </p>
       </div>
 
@@ -265,46 +266,94 @@
         <a class="download-link" href="requirements.txt" download="requirements.txt">Requirements</a>
       </div>
 
-      <div class="figure-grid">
-        <figure class="figure-card">
-          <img
-            src="figures/reproducible_plots/li_2020_bgD_vs_zhat.png"
-            alt="Plot of nondimensional plume half-width b_g over D versus z over D."
-          />
-          <figcaption>
-            Plume half-width scaling from Li et al. 2020 comparison data.
-          </figcaption>
-        </figure>
+      <div class="plot-set">
+        <h3>Example: Li et al. 2020</h3>
+        <div class="figure-grid">
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/li_2020_bgD_vs_zhat.png"
+              alt="Li et al. 2020 plume half-width scaling plot showing b_g over D versus z over D."
+            />
+            <figcaption>
+              Plume half-width scaling: b_g/D versus z/D.
+            </figcaption>
+          </figure>
 
-        <figure class="figure-card">
-          <img
-            src="figures/reproducible_plots/li_2020_Mhat_vs_zhat.png"
-            alt="Plot of nondimensional momentum flux versus z over D."
-          />
-          <figcaption>
-            Momentum flux scaling from Li et al. 2020 comparison data.
-          </figcaption>
-        </figure>
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/li_2020_WcWs_vs_zhat.png"
+              alt="Li et al. 2020 centerline velocity scaling plot showing W_c over W_s versus z over D."
+            />
+            <figcaption>
+              Centerline velocity scaling: W_c/W_s versus z/D.
+            </figcaption>
+          </figure>
 
-        <figure class="figure-card">
-          <img
-            src="figures/reproducible_plots/wang_2019_UmUs_vs_zhat.png"
-            alt="Plot of Wang et al. 2019 normalized mean velocity versus z over D."
-          />
-          <figcaption>
-            Mean velocity scaling from Wang et al. 2019.
-          </figcaption>
-        </figure>
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/li_2020_Qhat_vs_zhat.png"
+              alt="Li et al. 2020 volume flux scaling plot showing Q over D squared W_s versus z over D."
+            />
+            <figcaption>
+              Volume flux scaling: Q/(D² W_s) versus z/D.
+            </figcaption>
+          </figure>
 
-        <figure class="figure-card">
-          <img
-            src="figures/reproducible_plots/wang_2019_alpha_vs_zhat.png"
-            alt="Plot of Wang et al. 2019 apparent entrainment coefficient versus z over D."
-          />
-          <figcaption>
-            Apparent entrainment coefficient from Wang et al. 2019.
-          </figcaption>
-        </figure>
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/li_2020_Mhat_vs_zhat.png"
+              alt="Li et al. 2020 momentum flux scaling plot showing M over D squared W_s squared versus z over D."
+            />
+            <figcaption>
+              Momentum flux scaling: M/(D² W_s²) versus z/D.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="plot-set">
+        <h3>Example: Fraga et al. 2016</h3>
+        <div class="figure-grid">
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/fraga_2016_plume_radius_bwD_vs_zD.png"
+              alt="Fraga et al. 2016 plume radius scaling plot showing b_w over D versus z over D."
+            />
+            <figcaption>
+              Plume radius scaling: b_w/D versus z/D.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/fraga_2016_E_vs_Wc.png"
+              alt="Fraga et al. 2016 entrainment velocity plot showing E versus W_c."
+            />
+            <figcaption>
+              Entrainment velocity: E versus W_c.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/fraga_2016_Q_over_wslipD2_vs_zD.png"
+              alt="Fraga et al. 2016 mass or volume flux scaling plot showing Q over w slip D squared versus z over D."
+            />
+            <figcaption>
+              Mass/volume flux scaling: Q/(w_slip D²) versus z/D.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <img
+              src="figures/reproducible_plots/fraga_2016_WcWslip_vs_zD.png"
+              alt="Fraga et al. 2016 centerline velocity scaling plot showing W_c over w_slip versus z over D."
+            />
+            <figcaption>
+              Centerline velocity scaling: W_c/w_slip versus z/D.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 

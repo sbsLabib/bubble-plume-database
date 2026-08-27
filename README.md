@@ -102,13 +102,14 @@ Open the notebook for inspection, modification, and rerunning:
 jupyter notebook notebooks/reproducible_plots.ipynb
 ```
 
-The notebook reads all available paper-level master CSV files from `csv/paper_data_downloads/csv/papers/` and saves figures to `figures/reproducible_plots/`.
+The notebook reads all available paper-level master CSV files from `csv/paper_data_downloads/csv/papers/` and saves figures to `figures/reproducible_plots/`. The homepage shows complete example plot sets for Li et al. 2020 and Fraga et al. 2016.
 
 Example notebook calls:
 
 ```python
 plot_paper("Li2020")
-plot_common("centerline_velocity", ["Li2020", "Wang2019"])
+plot_paper("Fraga2016")
+plot_common("centerline_velocity", ["Li2020", "Wang2019", "Fraga2016"])
 ```
 
 ## Preview the website locally
