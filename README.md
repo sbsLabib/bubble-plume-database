@@ -102,7 +102,7 @@ Open the notebook for inspection, modification, and rerunning:
 jupyter notebook notebooks/reproducible_plots.ipynb
 ```
 
-The notebook reads all available paper-level master CSV files from `csv/paper_data_downloads/csv/papers/` and saves figures to `figures/reproducible_plots/`. The homepage shows complete example plot sets for Li et al. 2020 and Fraga et al. 2016.
+The notebook reads all available paper-level master CSV files from `csv/paper_data_downloads/csv/papers/` and saves figures to `figures/reproducible_plots/`. The homepage shows Li et al. 2020 as the example reconstructed plot set. The notebook can generate plots for other papers using `plot_paper("PaperAlias")`.
 
 Example notebook calls:
 
